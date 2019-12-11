@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static org.springframework.boot.SpringApplication.run;
 
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @SpringBootApplication
 public class StockApplication {
 
