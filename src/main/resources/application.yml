@@ -2,6 +2,7 @@ spring:
 
   application:
     name: stock
+    instance: 1
 
   kafka:
     consumer:
@@ -22,4 +23,3 @@ management:
         include: "*"
     prometheus:
       enabled: true
-

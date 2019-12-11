@@ -1,17 +1,17 @@
 package com.predic8.stock;
 
-import com.predic8.stock.model.Stock;
-import com.predic8.stock.event.NullAwareBeanUtilsBean;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+import static org.springframework.boot.SpringApplication.run;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.springframework.boot.SpringApplication.run;
+import com.predic8.stock.event.NullAwareBeanUtilsBean;
+import com.predic8.stock.model.Stock;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
+//@EnableDiscoveryClient
 @SpringBootApplication
 public class StockApplication {
 
