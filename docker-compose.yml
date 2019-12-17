@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+    stock:
+        network_mode: cp-all-in-one_default
+        ports:
+            - '10081:8081'
+        image: stock
