@@ -12,7 +12,7 @@ node {
         }
 
         stage('Docker push') {             
-             sh "docker tag localhost:5000/stock"
+             sh "docker tag stock localhost:5000/stock"
              sh "docker push localhost:5000/stock"
         }
 
