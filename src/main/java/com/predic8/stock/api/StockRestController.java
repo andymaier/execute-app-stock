@@ -51,7 +51,7 @@ public class StockRestController {
 
 		old.setQuantity(stock.getQuantity());
 
-		Operation op = new Operation("article","upsert",mapper.valueToTree(old));
+		Operation op = new Operation("stock","upsert",mapper.valueToTree(old));
 
 		op.logSend();
 
