@@ -11,8 +11,14 @@ node {
              docker.build("stock")
         }
 
+        stage('Docker push') {             
+             sh "docker tag localhost:5000/stock"
+             sh "docker push localhost:5000/stock"
+        }
+
         stage("Deploy") {
             sh "docker rm -f stock || echo 'ok'"
-            sh "docker run -d --name stock --net cpallinone_default -p 11081:8081 stock"
+            sh "docker pull localhost:5000/stock"
+            sh "docker run -d --name stock --net cpallinone_default -p 11081:8081 localhost:5000/stock"
         }
 }
