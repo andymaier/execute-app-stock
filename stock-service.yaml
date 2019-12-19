@@ -8,5 +8,6 @@ spec:
   type: NodePort
   ports:
   - port: 8081
+    nodePort: 30001
   selector:
    app: stock

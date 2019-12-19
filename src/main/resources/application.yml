@@ -8,7 +8,7 @@ spring:
     consumer:
       group-id: stock-${random.uuid}
       auto-offset-reset: earliest
-    bootstrap-servers: broker:29092
+    bootstrap-servers: 10.101.6.203:9092
 
 server:
   port: 8081

@@ -5,7 +5,7 @@ metadata:
   labels:
     app: stock
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: stock
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: stock
-        image: localhost:5000/msa-stock-test:version1.0
+        image: localhost:5000/stock:version2.0
         ports:
         - containerPort: 8081
